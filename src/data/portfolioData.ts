@@ -103,14 +103,14 @@ print(f"XGBoost F1-Score: {f1_score(y_test, y_pred):.4f}")`
   },
   {
     id: 'codescope',
-    title: 'CodeScope — Architecture & Security Engine',
-    tagline: 'Automated codebase auditing platform analyzing project domain, tech stack, and security vulnerabilities.',
-    category: 'full-stack',
+    title: 'CodeScope AI – AI-Powered Code Analysis Platform',
+    tagline: 'Generative AI platform analyzing codebases, technology stacks, project domains, and software architecture.',
+    category: 'ai-ml',
     featured: true,
     stars: 8,
-    badge: 'Full-Stack Engine',
-    problem: 'Engineering teams and technical reviewers lack instant visibility into the architectural topology, third-party risk posture, and framework composition of large codebases.',
-    solution: 'Constructed CodeScope, an intelligent codebase analyzer combining Python FastAPI backend micro-engine with AST parsing, regex token detectors, and a modern React TypeScript dashboard to deliver instant structural diagnostics.',
+    badge: 'Generative AI | Python | LLM',
+    problem: 'Developers and engineering teams spend excessive time understanding complex codebases, architecture styles, and technology stacks in legacy and unfamiliar repositories.',
+    solution: 'Developed an AI-powered platform for analyzing software projects and generating structured insights about codebases, technologies, project domains, and application architecture. Designed workflows accepting project repositories or source directories for developer-oriented insights and productivity.',
     architecture: 'Zip/Folder Upload -> FastAPI Async Engine -> Specialized Detectors (Domain, Tech, Architecture, Security) -> SQLite Result Cache -> React/Vite UI with visual report rendering.',
     architectureSteps: [
       { step: '01', title: 'AST & Token Scanning', desc: 'Parses directory trees and file tokens across JavaScript, TypeScript, Python, and Java.' },
@@ -168,6 +168,93 @@ async def run_full_codebase_audit(project_path: str, progress_cb=None):
         tech_info, domain_info, security_info, arch_info
     )`
     }
+  },
+  {
+    id: 'ragforge-ai',
+    title: 'RAGForge AI – Retrieval-Augmented Generation Application',
+    tagline: 'Enterprise RAG application combining document retrieval, contextual semantic search, and LLM generation.',
+    category: 'ai-ml',
+    featured: true,
+    stars: 10,
+    badge: 'RAG | Python | LLM',
+    problem: 'Standard language model queries lack domain context, proprietary knowledge bases, and produce hallucinations on specialized enterprise data.',
+    solution: 'Built a Retrieval-Augmented Generation application combining document retrieval, contextual information and language-model generation for knowledge-based question answering. Applied embeddings, semantic retrieval, prompt engineering and LLM-based generation to improve contextual response relevance.',
+    architecture: 'Document Ingestion -> Chunking & OpenAI Embeddings -> Vector Store (ChromaDB / Pinecone) -> Top-K Semantic Retrieval -> Prompt Augmentation -> LLM Answer Synthesis.',
+    architectureSteps: [
+      { step: '01', title: 'Document Chunking', desc: 'Ingests PDFs, Markdown, and TXT files with recursive token-aware chunking.' },
+      { step: '02', title: 'Semantic Embeddings', desc: 'Computes high-dimensional vector representations stored in index.' },
+      { step: '03', title: 'Contextual Retrieval', desc: 'Extracts relevant context chunks via cosine similarity scoring.' },
+      { step: '04', title: 'LLM Generation', desc: 'Synthesizes accurate answers backed with direct source citations.' }
+    ],
+    technologies: ['Python', 'RAG', 'LangChain', 'OpenAI API', 'Vector Embeddings', 'ChromaDB', 'FastAPI'],
+    keyFeatures: [
+      'Document retrieval pipeline combining contextual information with language-model generation',
+      'Advanced prompt engineering and semantic retrieval for high response relevance',
+      'Fast query response times with cached vector embeddings',
+      'Modular Python backend with structured REST API endpoints'
+    ],
+    engineeringChallenges: [
+      'Tuning chunk size and overlap to preserve critical semantic context',
+      'Optimizing retrieval latency for large multi-document knowledge stores'
+    ],
+    results: [
+      'High retrieval precision for specialized knowledge-based question answering',
+      'Zero hallucination on domain-specific test evaluation prompts'
+    ],
+    metrics: [
+      { label: 'Retrieval Method', value: 'Cosine Similarity', description: 'Vector distance metric' },
+      { label: 'Context Chunks', value: 'Top-4', description: 'Optimal context injection' }
+    ],
+    githubUrl: 'https://github.com/Nithinreddy44',
+    codeSnippet: {
+      filename: 'ragforge_pipeline.py',
+      language: 'python',
+      code: `from langchain.chains import RetrievalQA
+from langchain.chat_models import ChatOpenAI
+from langchain.embeddings import OpenAIEmbeddings
+from langchain.vectorstores import Chroma
+
+embeddings = OpenAIEmbeddings(model="text-embedding-3-small")
+vector_db = Chroma(persist_directory="./db", embedding_function=embeddings)
+
+qa_chain = RetrievalQA.from_chain_type(
+    llm=ChatOpenAI(model_name="gpt-4o", temperature=0.2),
+    chain_type="stuff",
+    retriever=vector_db.as_retriever(search_kwargs={"k": 4})
+)
+
+def query_knowledge_base(question: str) -> str:
+    response = qa_chain.run(question)
+    return response`
+    }
+  },
+  {
+    id: 'ai-chatbot-web',
+    title: 'AI Chatbot Web Application',
+    tagline: 'Real-time conversational web chatbot supporting dynamic streaming responses and API integration.',
+    category: 'full-stack',
+    featured: true,
+    stars: 7,
+    badge: 'Python | AI | REST API | React',
+    problem: 'Users require real-time interactive conversational assistants with responsive streaming output and persistent message history.',
+    solution: 'Developed and deployed a responsive AI chatbot supporting real-time user interaction through API-based response generation. Integrated frontend and backend/API services to support conversational workflows, dynamic responses and reliable user interaction.',
+    architecture: 'React Frontend -> REST API Gateway -> Python Backend / AI Service -> Dynamic Response Stream -> Client UI.',
+    technologies: ['React', 'Python', 'REST APIs', 'FastAPI', 'JavaScript', 'Tailwind CSS'],
+    keyFeatures: [
+      'Responsive full-stack AI chatbot with real-time API response generation',
+      'Seamless frontend and backend integration supporting dynamic conversational workflows',
+      'Clean modern UI with message markdown rendering and code syntax highlighting',
+      'Reliable error handling and graceful fallback states'
+    ],
+    engineeringChallenges: [
+      'Managing asynchronous message state and optimistic UI updates',
+      'Structuring secure and scalable RESTful API contracts between React and Python'
+    ],
+    results: [
+      'Shipped responsive chatbot with sub-second response streaming',
+      'High user satisfaction with intuitive and modern chat interface'
+    ],
+    githubUrl: 'https://github.com/Nithinreddy44'
   },
   {
     id: 'ai-agent-for-call',
@@ -465,15 +552,17 @@ export const EXPERIENCES: Experience[] = [
 ];
 
 export const EDUCATION: Education = {
-  degree: 'Bachelor of Engineering (B.E.) in Computer Science & Engineering',
-  institution: 'Saveetha School of Engineering (SIMATS)',
-  location: 'Chennai, Tamil Nadu, India',
+  degree: 'B.E. / B.Tech. in Computer Science & Engineering',
+  institution: 'Saveetha School of Engineering',
+  location: 'Chennai, India',
   period: '2022 — 2026',
-  focus: 'Artificial Intelligence, Machine Learning, Deep Neural Networks, Software Engineering & MLOps',
+  focus: 'Artificial Intelligence, Machine Learning, RAG Systems, Full-Stack Development & Software Engineering',
   highlights: [
-    'Specialized coursework: Machine Learning, Artificial Intelligence, Database Management Systems, Cloud Computing, Operating Systems, Computer Networks.',
-    'Active open-source contributor and technical project builder on GitHub (25+ repositories).',
-    'Hands-on internship experience across AI engineering, Spring Boot microservices, and full-stack development.'
+    'Saveetha School of Engineering, Chennai (2026) — B.E. / B.Tech. Computer Science Engineering • CGPA: 8.5/10',
+    'Narayana Junior College (2022) — Intermediate (MPC) • 89.3%',
+    'Published 4 research papers focused on classification accuracy and machine learning model performance.',
+    'Received Best Performance Award for technical project work involving AI, IoT, robotics, and intelligent systems.',
+    'Selected for Infosys Springboard Virtual Internship 7.0 – Batch 1.'
   ]
 };
 
