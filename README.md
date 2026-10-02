@@ -72,7 +72,7 @@ npm run build
 - **GitHub:** [github.com/Nithinreddy44](https://github.com/Nithinreddy44)
 - **LinkedIn:** [linkedin.com/in/kamireddy-nithin-kumar-reddy-7180b6259](https://www.linkedin.com/in/kamireddy-nithin-kumar-reddy-7180b6259/)
 - **Resume (PDF):** [Nithin Kumar Reddy Resume (PDF)](./public/resume.pdf)
-- **Certificate & Credentials Vault:** [Google Drive](https://drive.google.com/drive/folders/1XQm5JhgbE836_3pk9Iwpie6z8EAAApE1?usp=share_link)
+- **Certificate & Credentials Vault:** [Google Drive](https://drive.google.com/drive/folders/1tDy-tY9c_k19J9IMi0K8XHMahBT67Peh?usp=share_link)
 
 ---
 

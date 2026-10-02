@@ -76,7 +76,7 @@ export interface Certification {
   title: string;
   issuer: string;
   issueDate: string;
-  category: 'Industry Certification' | 'Engineering Simulation' | 'Enterprise Track';
+  category: string;
   badge: string;
   description: string;
   skills: string[];
