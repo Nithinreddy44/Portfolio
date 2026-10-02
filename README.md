@@ -20,8 +20,8 @@
   - **SpeakingGym** — Speech coaching & vocal pacing analytics platform.
 - **Recruiter Code Inspection Suite:** Syntax-highlighted production code samples across Python (FastAPI RAG, PyTorch Autoencoder) and MySQL 8.0 Window analytics.
 - **Interactive Engineering Playground:** Real-time sensor failure classifier slider, step-by-step Enterprise RAG flow visualizer, and live AST security scanner.
-- **Developer CLI Terminal:** Built-in `nithin@portfolio:~$` shell with diagnostic commands and sound FX.
-- **Design System:** Apple/Linear-inspired minimal aesthetics, custom dark/light theme engine, responsive mobile drawer, and Web Audio API micro-sound synthesizers.
+- **Developer CLI Terminal:** Built-in `nithin@portfolio:~$` shell with diagnostic commands.
+- **Design System:** Apple/Linear-inspired minimal aesthetics, custom dark/light theme engine, and responsive mobile drawer.
 
 ---
 
@@ -30,7 +30,6 @@
 - **Frontend:** React 19, TypeScript, Tailwind CSS, Framer Motion
 - **3D & Graphics:** Three.js, WebGL Canvas
 - **Icons & Visuals:** Lucide React, Canvas Confetti
-- **Audio Engine:** Native Web Audio API Synthesizers
 - **Build System:** Vite, PostCSS, Autoprefixer, TypeScript
 
 ---

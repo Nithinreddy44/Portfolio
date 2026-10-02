@@ -5,8 +5,6 @@ import { PERSONAL_INFO } from '../data/portfolioData';
 import { 
   Sun, 
   Moon, 
-  Volume2, 
-  VolumeX, 
   Menu, 
   X, 
   Download, 
@@ -16,7 +14,7 @@ import {
 
 export const Navbar: React.FC = () => {
   const { theme, toggleTheme } = useTheme();
-  const { isMuted, toggleSound, triggerSound } = useSound();
+  const { triggerSound } = useSound();
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('hero');
@@ -119,20 +117,8 @@ export const Navbar: React.FC = () => {
           })}
         </nav>
 
-        {/* Actions (Sound, Theme, Resume, Mobile Toggle) */}
+        {/* Actions (Theme, Resume, Mobile Toggle) */}
         <div className="flex items-center gap-2 sm:gap-3">
-          {/* Sound FX Toggle */}
-          <button
-            onClick={() => {
-              toggleSound();
-            }}
-            className="p-2 rounded-lg bg-slate-200/60 dark:bg-white/[0.05] border border-slate-300/40 dark:border-white/[0.08] text-slate-700 dark:text-slate-300 hover:text-brand-400 dark:hover:text-brand-300 transition-colors"
-            title={isMuted ? 'Enable Sound FX' : 'Mute Sound FX'}
-            aria-label="Toggle Sound Effects"
-          >
-            {isMuted ? <VolumeX className="w-4 h-4" /> : <Volume2 className="w-4 h-4 text-brand-400" />}
-          </button>
-
           {/* Theme Switcher */}
           <button
             onClick={() => {
