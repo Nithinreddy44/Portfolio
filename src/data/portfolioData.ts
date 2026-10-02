@@ -557,6 +557,30 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
 
 export const CERTIFICATIONS: Certification[] = [
   {
+    id: 'deloitte-ai-cert',
+    title: 'Deloitte Data & AI Analytics Simulation',
+    issuer: 'Deloitte (via Forage)',
+    issueDate: '2024',
+    category: 'Engineering Simulation',
+    badge: 'Deloitte AI',
+    description: 'Completed enterprise AI simulation covering machine learning data preparation, telemetry anomaly diagnosis, and strategic model synthesis.',
+    skills: ['Data Analytics', 'Machine Learning', 'Data Preprocessing', 'Statistical Modeling', 'Tableau'],
+    driveUrl: 'https://drive.google.com/file/d/168c0cjdxsLC2ZREW4CA_coDYVKbDJb5C/view?usp=sharing',
+    featured: true
+  },
+  {
+    id: 'professional-cert',
+    title: 'Professional Engineering & Technical Certification',
+    issuer: 'Professional Certification Authority',
+    issueDate: '2024',
+    category: 'Professional Track',
+    badge: 'Professional Credential',
+    description: 'Verified professional engineering credential validating technical domain proficiency, core software engineering principles, and applied solutions.',
+    skills: ['Software Engineering', 'System Architecture', 'Technical Computing', 'Problem Solving'],
+    driveUrl: 'https://drive.google.com/file/d/1vQyY40sU9nHFOmbqNZ9YxE-FikxuHuAs/view?usp=sharing',
+    featured: true
+  },
+  {
     id: 'tata-genai-cert',
     title: 'TATA Generative AI Powered Data Analytics',
     issuer: 'TATA / Forage',
