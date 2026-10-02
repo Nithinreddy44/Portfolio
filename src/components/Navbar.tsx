@@ -208,7 +208,7 @@ export const Navbar: React.FC = () => {
                 className="flex items-center justify-center gap-2 w-full py-3 rounded-xl text-sm font-semibold bg-gradient-to-r from-brand-500 to-neural-600 text-white shadow-glow-cyan"
               >
                 <Download className="w-4 h-4" />
-                <span>Download Resume (Google Drive)</span>
+                <span>Download Resume PDF</span>
               </a>
 
               <a

@@ -69,9 +69,10 @@ npm run build
 
 - **Email:** [nithinreddy5181@gmail.com](mailto:nithinreddy5181@gmail.com)
 - **Phone:** +91 6303695181
-- **LinkedIn:** [linkedin.com/in/kamireddy-nithin-kumar-reddy-7180b6259](https://www.linkedin.com/in/kamireddy-nithin-kumar-reddy-7180b6259/)
 - **GitHub:** [github.com/Nithinreddy44](https://github.com/Nithinreddy44)
-- **Certificate & Resume Vault:** [Google Drive](https://drive.google.com/drive/folders/1XQm5JhgbE836_3pk9Iwpie6z8EAAApE1?usp=share_link)
+- **LinkedIn:** [linkedin.com/in/kamireddy-nithin-kumar-reddy-7180b6259](https://www.linkedin.com/in/kamireddy-nithin-kumar-reddy-7180b6259/)
+- **Resume (PDF):** [Nithin Kumar Reddy Resume (PDF)](./public/resume.pdf)
+- **Certificate & Credentials Vault:** [Google Drive](https://drive.google.com/drive/folders/1XQm5JhgbE836_3pk9Iwpie6z8EAAApE1?usp=share_link)
 
 ---
 

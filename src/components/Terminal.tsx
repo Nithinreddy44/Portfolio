@@ -64,6 +64,7 @@ export const Terminal: React.FC = () => {
               <div><strong className="text-amber-400">projects</strong> : Curated engineering case studies</div>
               <div><strong className="text-amber-400">experience</strong> : Internships & verified tracks</div>
               <div><strong className="text-amber-400">certs</strong> : Industry certifications & drive vault</div>
+              <div><strong className="text-amber-400">resume</strong> : View / Download candidate resume PDF</div>
               <div><strong className="text-amber-400">contact</strong> : Direct recruiter channels</div>
               <div><strong className="text-amber-400">github</strong> : Open GitHub profile (@Nithinreddy44)</div>
               <div><strong className="text-amber-400">clear</strong> : Reset terminal output</div>
@@ -139,8 +140,23 @@ export const Terminal: React.FC = () => {
               </div>
             ))}
             <div className="text-[11px] text-brand-300 mt-2">
-              Drive Vault: {PERSONAL_INFO.resumeUrl}
+              Drive Vault: {PERSONAL_INFO.resumeDriveUrl || PERSONAL_INFO.resumeUrl}
             </div>
+          </div>
+        );
+        break;
+
+      case 'resume':
+      case 'cv':
+        window.open(PERSONAL_INFO.resumeUrl, '_blank');
+        outputContent = (
+          <div className="space-y-1 text-slate-300">
+            <div className="text-brand-400 font-bold">Resume Document:</div>
+            <div className="text-emerald-400">Opening resume PDF in new tab...</div>
+            <div>• Direct Link: <a href={PERSONAL_INFO.resumeUrl} target="_blank" rel="noopener noreferrer" className="text-brand-300 underline">/resume.pdf</a></div>
+            {PERSONAL_INFO.resumeDriveUrl && (
+              <div>• Drive Archive: <a href={PERSONAL_INFO.resumeDriveUrl} target="_blank" rel="noopener noreferrer" className="text-brand-300 underline">Google Drive Vault</a></div>
+            )}
           </div>
         );
         break;

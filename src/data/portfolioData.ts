@@ -9,10 +9,11 @@ export const PERSONAL_INFO = {
   availability: 'Available for Software Engineering & AI Opportunities',
   email: 'nithinreddy5181@gmail.com',
   phone: '+91 6303695181',
-  location: 'Chennai / Nellore, India',
+  location: 'Hyderabad, India',
   githubUrl: 'https://github.com/Nithinreddy44',
   linkedinUrl: 'https://www.linkedin.com/in/kamireddy-nithin-kumar-reddy-7180b6259/',
-  resumeUrl: 'https://drive.google.com/drive/folders/1XQm5JhgbE836_3pk9Iwpie6z8EAAApE1?usp=share_link',
+  resumeUrl: '/resume.pdf',
+  resumeDriveUrl: 'https://drive.google.com/drive/folders/1XQm5JhgbE836_3pk9Iwpie6z8EAAApE1?usp=share_link',
   profileImage: '/images/profile.jpg',
   stats: [
     { label: 'GitHub Repositories', value: '25+' },

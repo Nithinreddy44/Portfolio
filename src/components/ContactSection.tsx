@@ -155,7 +155,7 @@ export const ContactSection: React.FC = () => {
                   className="flex items-center justify-center gap-2 w-full py-3 rounded-xl text-xs font-semibold bg-gradient-to-r from-brand-500 to-neural-600 hover:from-brand-400 hover:to-neural-500 text-white shadow-glow-cyan transition-all"
                 >
                   <Download className="w-4 h-4" />
-                  <span>Download Resume PDF (Drive)</span>
+                  <span>Download Resume PDF</span>
                 </a>
               </div>
             </div>

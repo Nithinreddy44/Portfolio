@@ -76,10 +76,10 @@ export const Hero: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => triggerSound('success')}
-                className="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl font-semibold text-sm bg-slate-200/70 dark:bg-white/[0.05] hover:bg-slate-300/80 dark:hover:bg-white/[0.1] border border-slate-300/60 dark:border-white/[0.1] text-slate-800 dark:text-white transition-all transform hover:-translate-y-0.5"
+                className="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl font-semibold text-sm bg-slate-200/70 dark:bg-white/[0.05] hover:bg-slate-300/80 dark:hover:bg-white/[0.1] border border-slate-300/60 dark:border-white/[0.1] text-slate-800 dark:text-white transition-all transform hover:-translate-y-0.5 shadow-sm"
               >
                 <Download className="w-4 h-4 text-brand-400" />
-                <span>Resume Vault</span>
+                <span>Resume PDF</span>
               </a>
 
               {/* Social Links */}

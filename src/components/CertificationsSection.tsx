@@ -89,7 +89,7 @@ export const CertificationsSection: React.FC = () => {
         {/* Access Full Drive Vault Banner */}
         <div className="mt-12 text-center">
           <a
-            href={PERSONAL_INFO.resumeUrl}
+            href={PERSONAL_INFO.resumeDriveUrl || PERSONAL_INFO.resumeUrl}
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => triggerSound('success')}
